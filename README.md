@@ -19,7 +19,7 @@ Please checkout the [JTLDB Demo Project]() __COMING SOON__ for a good example of
 ## Contributing
 Want to contribute? Fork the repo and send us a pull request.
 
-## Copyright and license
+## Copyright and License
 Copyright 2012 JTL Systems
 
 Licensed under the Apache License, Version 2.0 (the "License");
