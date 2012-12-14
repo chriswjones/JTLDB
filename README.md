@@ -8,9 +8,12 @@ JTLDB is a fully asynchronous and thread safe ObjectiveC SQLite wrapper that all
 
 1. Add JTLDB as a submodule of you project
 ```
-$ cd /path/to/MyApplication  
-# If this is a new project, initialize git...  
-$ git init  
+$ cd /path/to/MyApplication
+
+# If this is a new project, initialize git...
+
+$ git init
+
 $ git submodule add git://github.com/jtlsystems/JTLDB.git  
 ```
 2. Add the JTLDB project to your XCode Workspace
