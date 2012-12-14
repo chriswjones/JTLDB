@@ -1,0 +1,468 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3C758F74165ABE3B0050D9C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C758F73165ABE3B0050D9C0 /* Foundation.framework */; };
+		3C758F83165ABE3B0050D9C0 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C758F82165ABE3B0050D9C0 /* SenTestingKit.framework */; };
+		3C758F85165ABE3B0050D9C0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C758F84165ABE3B0050D9C0 /* UIKit.framework */; };
+		3C758F86165ABE3B0050D9C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C758F73165ABE3B0050D9C0 /* Foundation.framework */; };
+		3C758F89165ABE3B0050D9C0 /* libJTLDB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C758F70165ABE3B0050D9C0 /* libJTLDB.a */; };
+		3CE7472C167A9DAF005DAAD1 /* JConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE7471D167A9DAF005DAAD1 /* JConnection.m */; };
+		3CE7472D167A9DAF005DAAD1 /* JDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE7471F167A9DAF005DAAD1 /* JDatabase.m */; };
+		3CE7472E167A9DAF005DAAD1 /* JOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE74721167A9DAF005DAAD1 /* JOperation.m */; };
+		3CE7472F167A9DAF005DAAD1 /* JResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE74723167A9DAF005DAAD1 /* JResult.m */; };
+		3CE74730167A9DAF005DAAD1 /* JRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE74725167A9DAF005DAAD1 /* JRow.m */; };
+		3CE74731167A9DAF005DAAD1 /* sqlite3.c in Sources */ = {isa = PBXBuildFile; fileRef = 3CE74729167A9DAF005DAAD1 /* sqlite3.c */; };
+		3CE7473D167A9E15005DAAD1 /* CreateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE74735167A9DEE005DAAD1 /* CreateTests.m */; };
+		3CE7473E167A9E1A005DAAD1 /* ReadWriteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE7473A167A9DEE005DAAD1 /* ReadWriteTests.m */; };
+		3CE74740167A9E28005DAAD1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3CE74736167A9DEE005DAAD1 /* InfoPlist.strings */; };
+		3CE74741167A9E34005DAAD1 /* seed.db in Resources */ = {isa = PBXBuildFile; fileRef = 3CE7473B167A9DEE005DAAD1 /* seed.db */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3C758F87165ABE3B0050D9C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3C758F67165ABE3B0050D9C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C758F6F165ABE3B0050D9C0;
+			remoteInfo = GusDB;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3C758F6E165ABE3B0050D9C0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3C758F70165ABE3B0050D9C0 /* libJTLDB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJTLDB.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C758F73165ABE3B0050D9C0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3C758F81165ABE3B0050D9C0 /* JTLDBTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JTLDBTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C758F82165ABE3B0050D9C0 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		3C758F84165ABE3B0050D9C0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		3CE7471C167A9DAF005DAAD1 /* JConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JConnection.h; sourceTree = "<group>"; };
+		3CE7471D167A9DAF005DAAD1 /* JConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JConnection.m; sourceTree = "<group>"; };
+		3CE7471E167A9DAF005DAAD1 /* JDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDatabase.h; sourceTree = "<group>"; };
+		3CE7471F167A9DAF005DAAD1 /* JDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDatabase.m; sourceTree = "<group>"; };
+		3CE74720167A9DAF005DAAD1 /* JOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JOperation.h; sourceTree = "<group>"; };
+		3CE74721167A9DAF005DAAD1 /* JOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JOperation.m; sourceTree = "<group>"; };
+		3CE74722167A9DAF005DAAD1 /* JResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JResult.h; sourceTree = "<group>"; };
+		3CE74723167A9DAF005DAAD1 /* JResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JResult.m; sourceTree = "<group>"; };
+		3CE74724167A9DAF005DAAD1 /* JRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRow.h; sourceTree = "<group>"; };
+		3CE74725167A9DAF005DAAD1 /* JRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRow.m; sourceTree = "<group>"; };
+		3CE74726167A9DAF005DAAD1 /* JTLDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTLDB.h; sourceTree = "<group>"; };
+		3CE74727167A9DAF005DAAD1 /* JTLDB-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JTLDB-Prefix.pch"; sourceTree = "<group>"; };
+		3CE74729167A9DAF005DAAD1 /* sqlite3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sqlite3.c; sourceTree = "<group>"; };
+		3CE7472A167A9DAF005DAAD1 /* sqlite3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sqlite3.h; sourceTree = "<group>"; };
+		3CE7472B167A9DAF005DAAD1 /* sqlite3ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sqlite3ext.h; sourceTree = "<group>"; };
+		3CE74734167A9DEE005DAAD1 /* CreateTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreateTests.h; sourceTree = "<group>"; };
+		3CE74735167A9DEE005DAAD1 /* CreateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CreateTests.m; sourceTree = "<group>"; };
+		3CE74737167A9DEE005DAAD1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3CE74738167A9DEE005DAAD1 /* JTLDBTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JTLDBTests-Info.plist"; sourceTree = "<group>"; };
+		3CE74739167A9DEE005DAAD1 /* ReadWriteTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReadWriteTests.h; sourceTree = "<group>"; };
+		3CE7473A167A9DEE005DAAD1 /* ReadWriteTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReadWriteTests.m; sourceTree = "<group>"; };
+		3CE7473B167A9DEE005DAAD1 /* seed.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = seed.db; sourceTree = "<group>"; };
+		732F4E29E044E9FC12E76846 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3C758F6D165ABE3B0050D9C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C758F74165ABE3B0050D9C0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C758F7D165ABE3B0050D9C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C758F83165ABE3B0050D9C0 /* SenTestingKit.framework in Frameworks */,
+				3C758F85165ABE3B0050D9C0 /* UIKit.framework in Frameworks */,
+				3C758F86165ABE3B0050D9C0 /* Foundation.framework in Frameworks */,
+				3C758F89165ABE3B0050D9C0 /* libJTLDB.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3C758F65165ABE3B0050D9C0 = {
+			isa = PBXGroup;
+			children = (
+				3CE7471B167A9DAF005DAAD1 /* JTLDB */,
+				3CE74733167A9DEE005DAAD1 /* JTLDBTests */,
+				3C758F72165ABE3B0050D9C0 /* Frameworks */,
+				3C758F71165ABE3B0050D9C0 /* Products */,
+				732F4E29E044E9FC12E76846 /* LICENSE */,
+			);
+			sourceTree = "<group>";
+		};
+		3C758F71165ABE3B0050D9C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3C758F70165ABE3B0050D9C0 /* libJTLDB.a */,
+				3C758F81165ABE3B0050D9C0 /* JTLDBTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3C758F72165ABE3B0050D9C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C758F73165ABE3B0050D9C0 /* Foundation.framework */,
+				3C758F82165ABE3B0050D9C0 /* SenTestingKit.framework */,
+				3C758F84165ABE3B0050D9C0 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3CE7471B167A9DAF005DAAD1 /* JTLDB */ = {
+			isa = PBXGroup;
+			children = (
+				3CE74726167A9DAF005DAAD1 /* JTLDB.h */,
+				3CE74732167A9DB7005DAAD1 /* Supporting Files */,
+				3CE74728167A9DAF005DAAD1 /* SQLite */,
+				3CE7471C167A9DAF005DAAD1 /* JConnection.h */,
+				3CE7471D167A9DAF005DAAD1 /* JConnection.m */,
+				3CE7471E167A9DAF005DAAD1 /* JDatabase.h */,
+				3CE7471F167A9DAF005DAAD1 /* JDatabase.m */,
+				3CE74720167A9DAF005DAAD1 /* JOperation.h */,
+				3CE74721167A9DAF005DAAD1 /* JOperation.m */,
+				3CE74722167A9DAF005DAAD1 /* JResult.h */,
+				3CE74723167A9DAF005DAAD1 /* JResult.m */,
+				3CE74724167A9DAF005DAAD1 /* JRow.h */,
+				3CE74725167A9DAF005DAAD1 /* JRow.m */,
+			);
+			path = JTLDB;
+			sourceTree = "<group>";
+		};
+		3CE74728167A9DAF005DAAD1 /* SQLite */ = {
+			isa = PBXGroup;
+			children = (
+				3CE74729167A9DAF005DAAD1 /* sqlite3.c */,
+				3CE7472A167A9DAF005DAAD1 /* sqlite3.h */,
+				3CE7472B167A9DAF005DAAD1 /* sqlite3ext.h */,
+			);
+			path = SQLite;
+			sourceTree = "<group>";
+		};
+		3CE74732167A9DB7005DAAD1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3CE74727167A9DAF005DAAD1 /* JTLDB-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3CE74733167A9DEE005DAAD1 /* JTLDBTests */ = {
+			isa = PBXGroup;
+			children = (
+				3CE7473C167A9DFE005DAAD1 /* Supporting Files */,
+				3CE74734167A9DEE005DAAD1 /* CreateTests.h */,
+				3CE74735167A9DEE005DAAD1 /* CreateTests.m */,
+				3CE74739167A9DEE005DAAD1 /* ReadWriteTests.h */,
+				3CE7473A167A9DEE005DAAD1 /* ReadWriteTests.m */,
+				3CE7473B167A9DEE005DAAD1 /* seed.db */,
+			);
+			path = JTLDBTests;
+			sourceTree = "<group>";
+		};
+		3CE7473C167A9DFE005DAAD1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3CE74738167A9DEE005DAAD1 /* JTLDBTests-Info.plist */,
+				3CE74736167A9DEE005DAAD1 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3C758F6F165ABE3B0050D9C0 /* JTLDB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C758F95165ABE3B0050D9C0 /* Build configuration list for PBXNativeTarget "JTLDB" */;
+			buildPhases = (
+				3C758F6C165ABE3B0050D9C0 /* Sources */,
+				3C758F6D165ABE3B0050D9C0 /* Frameworks */,
+				3C758F6E165ABE3B0050D9C0 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JTLDB;
+			productName = GusDB;
+			productReference = 3C758F70165ABE3B0050D9C0 /* libJTLDB.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		3C758F80165ABE3B0050D9C0 /* JTLDBTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C758F98165ABE3B0050D9C0 /* Build configuration list for PBXNativeTarget "JTLDBTests" */;
+			buildPhases = (
+				3C758F7C165ABE3B0050D9C0 /* Sources */,
+				3C758F7D165ABE3B0050D9C0 /* Frameworks */,
+				3C758F7E165ABE3B0050D9C0 /* Resources */,
+				3C758F7F165ABE3B0050D9C0 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3C758F88165ABE3B0050D9C0 /* PBXTargetDependency */,
+			);
+			name = JTLDBTests;
+			productName = GusDBTests;
+			productReference = 3C758F81165ABE3B0050D9C0 /* JTLDBTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3C758F67165ABE3B0050D9C0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Chris Jones";
+			};
+			buildConfigurationList = 3C758F6A165ABE3B0050D9C0 /* Build configuration list for PBXProject "JTLDB" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3C758F65165ABE3B0050D9C0;
+			productRefGroup = 3C758F71165ABE3B0050D9C0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3C758F6F165ABE3B0050D9C0 /* JTLDB */,
+				3C758F80165ABE3B0050D9C0 /* JTLDBTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3C758F7E165ABE3B0050D9C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CE74740167A9E28005DAAD1 /* InfoPlist.strings in Resources */,
+				3CE74741167A9E34005DAAD1 /* seed.db in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C758F7F165ABE3B0050D9C0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3C758F6C165ABE3B0050D9C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CE7472C167A9DAF005DAAD1 /* JConnection.m in Sources */,
+				3CE7472D167A9DAF005DAAD1 /* JDatabase.m in Sources */,
+				3CE7472E167A9DAF005DAAD1 /* JOperation.m in Sources */,
+				3CE7472F167A9DAF005DAAD1 /* JResult.m in Sources */,
+				3CE74730167A9DAF005DAAD1 /* JRow.m in Sources */,
+				3CE74731167A9DAF005DAAD1 /* sqlite3.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C758F7C165ABE3B0050D9C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CE7473D167A9E15005DAAD1 /* CreateTests.m in Sources */,
+				3CE7473E167A9E1A005DAAD1 /* ReadWriteTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3C758F88165ABE3B0050D9C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C758F6F165ABE3B0050D9C0 /* JTLDB */;
+			targetProxy = 3C758F87165ABE3B0050D9C0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3CE74736167A9DEE005DAAD1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3CE74737167A9DEE005DAAD1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3C758F93165ABE3B0050D9C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3C758F94165ABE3B0050D9C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3C758F96165ABE3B0050D9C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/GusDB.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JTLDB/JTLDB-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = JTLDB;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		3C758F97165ABE3B0050D9C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/GusDB.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JTLDB/JTLDB-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = JTLDB;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		3C758F99165ABE3B0050D9C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GusDB/GusDB-Prefix.pch";
+				INFOPLIST_FILE = "GusDBTests/JTLDBTests-Info.plist";
+				PRODUCT_NAME = JTLDBTests;
+				TESTING = 1;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		3C758F9A165ABE3B0050D9C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GusDB/GusDB-Prefix.pch";
+				INFOPLIST_FILE = "GusDBTests/JTLDBTests-Info.plist";
+				PRODUCT_NAME = JTLDBTests;
+				TESTING = 1;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3C758F6A165ABE3B0050D9C0 /* Build configuration list for PBXProject "JTLDB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C758F93165ABE3B0050D9C0 /* Debug */,
+				3C758F94165ABE3B0050D9C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C758F95165ABE3B0050D9C0 /* Build configuration list for PBXNativeTarget "JTLDB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C758F96165ABE3B0050D9C0 /* Debug */,
+				3C758F97165ABE3B0050D9C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C758F98165ABE3B0050D9C0 /* Build configuration list for PBXNativeTarget "JTLDBTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C758F99165ABE3B0050D9C0 /* Debug */,
+				3C758F9A165ABE3B0050D9C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3C758F67165ABE3B0050D9C0 /* Project object */;
+}
