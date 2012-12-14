@@ -14,6 +14,7 @@
 //  limitations under the License.
 //
 
+#import "sqlite3.h"
 #import "JConnection.h"
 #import "JOperation.h"
 

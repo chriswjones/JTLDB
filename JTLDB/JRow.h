@@ -14,7 +14,11 @@
 //  limitations under the License.
 //
 
+@class JConnection;
+
 @interface JRow : NSObject
+
++ (JRow *)rowFromSQL:(NSString *)sql args:(NSArray *)args onConnection:(JConnection *)connection;
 
 - (id)initWithValues:(NSArray *)values columnMap:(NSDictionary *)columnMap;
 

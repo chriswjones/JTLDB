@@ -15,10 +15,20 @@
 //
 
 #import "JRow.h"
+#import "JTLDB.h"
 
 @implementation JRow {
     NSArray *_values;
     NSDictionary *_columnMap;
+}
+
++ (JRow *)rowFromSQL:(NSString *)sql args:(NSArray *)args onConnection:(JConnection *)connection {
+    JResult *result = [JResult resultFromSQL:sql args:args onConnection:connection];
+    if ([result.rows count] > 0) {
+        return [result.rows objectAtIndex:0];
+    } else{
+        return nil;
+    }
 }
 
 - (id)initWithValues:(NSArray *)values columnMap:(NSDictionary *)columnMap {

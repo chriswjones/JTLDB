@@ -14,6 +14,7 @@
 //  limitations under the License.
 //
 
+#import "sqlite3.h"
 #import "JDatabase.h"
 #import "JConnection.h"
 #import "JOperation.h"
@@ -23,7 +24,7 @@
 @synthesize defaultConnection = _defaultConnection;
 @synthesize readUncommittedConnection = _readUncommittedConnection;
 
-+ (JDatabase *)openDatabaseWithName:(NSString *)databaseFileName database:(NSString *)seedFile {
++ (JDatabase *)openDatabaseWithName:(NSString *)databaseFileName seedDatabase:(NSString *)seedFile {
     JDatabase *database = [[JDatabase alloc] init];
 
     // Check if DB exists in filesystem
@@ -47,7 +48,7 @@
                     NSLog(@"JDatabase [ERROR]: Copying database file %@ from main bundle failed.", databaseFileName);
                 }
             } else {
-                NSLog(@"JDatabase [ERROR]: File doesn't exist: %@", databaseFileName);
+                NSLog(@"JDatabase [INFO]: File doesn't exist: %@", databaseFileName);
             }
         }
     }

@@ -25,4 +25,6 @@
 
 + (JResult *)resultFromSQL:(NSString *)sql args:(NSArray *)args onConnection:(JConnection *)connection;
 
++ (NSArray *)rowsFromSQL:(NSString *)sql args:(NSArray *)args onConnection:(JConnection *)connection;
+
 @end

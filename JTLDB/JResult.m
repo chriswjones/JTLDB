@@ -14,6 +14,7 @@
 //  limitations under the License.
 //
 
+#import "sqlite3.h"
 #import "JResult.h"
 #import "JRow.h"
 #import "JConnection.h"
@@ -107,6 +108,10 @@
     }
 
     return result;
+}
+
++ (NSArray *)rowsFromSQL:(NSString *)sql args:(NSArray *)args onConnection:(JConnection *)connection {
+    return [JResult resultFromSQL:sql args:args onConnection:connection].rows;
 }
 
 #pragma mark - Helpers

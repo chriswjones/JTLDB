@@ -14,6 +14,8 @@
 //  limitations under the License.
 //
 
+#import "sqlite3.h"
+
 @class JOperation;
 
 @interface JConnection : NSObject

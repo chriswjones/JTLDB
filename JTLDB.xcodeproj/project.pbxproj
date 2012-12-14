@@ -17,7 +17,7 @@
 		3CE7472E167A9DAF005DAAD1 /* JOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE74721167A9DAF005DAAD1 /* JOperation.m */; };
 		3CE7472F167A9DAF005DAAD1 /* JResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE74723167A9DAF005DAAD1 /* JResult.m */; };
 		3CE74730167A9DAF005DAAD1 /* JRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE74725167A9DAF005DAAD1 /* JRow.m */; };
-		3CE74731167A9DAF005DAAD1 /* sqlite3.c in Sources */ = {isa = PBXBuildFile; fileRef = 3CE74729167A9DAF005DAAD1 /* sqlite3.c */; };
+		3CE74731167A9DAF005DAAD1 /* sqlite3.c in Sources */ = {isa = PBXBuildFile; fileRef = 3CE74729167A9DAF005DAAD1 /* sqlite3.c */; settings = {COMPILER_FLAGS = "-DSQLITE_ENABLE_COLUMN_METADATA"; }; };
 		3CE7473D167A9E15005DAAD1 /* CreateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE74735167A9DEE005DAAD1 /* CreateTests.m */; };
 		3CE7473E167A9E1A005DAAD1 /* ReadWriteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE7473A167A9DEE005DAAD1 /* ReadWriteTests.m */; };
 		3CE74740167A9E28005DAAD1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3CE74736167A9DEE005DAAD1 /* InfoPlist.strings */; };

@@ -40,7 +40,7 @@ static inline NSString *JTLDBFolderPath() {
 @property(nonatomic, readonly) JConnection *defaultConnection;
 @property(nonatomic, readonly) JConnection *readUncommittedConnection;
 
-+ (JDatabase *)openDatabaseWithName:(NSString *)databaseFileName database:(NSString *)seedFile;
++ (JDatabase *)openDatabaseWithName:(NSString *)databaseFileName seedDatabase:(NSString *)seedFile;
 
 - (void)close;
 
