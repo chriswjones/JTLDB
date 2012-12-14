@@ -6,7 +6,7 @@ JTLDB is a fully asynchronous and thread safe ObjectiveC SQLite wrapper that all
 
 ## Installation Instructions
 
-1. Add JTLDB as a submodule of you project
+1. Add JTLDB as a submodule of your project
 ```
 $ git submodule add git://github.com/jtlsystems/JTLDB.git  
 ```
