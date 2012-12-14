@@ -13,7 +13,7 @@ $ git submodule add git://github.com/jtlsystems/JTLDB.git
 
 2. Add the JTLDB project to your XCode Workspace
 
-## How to Use JTLDB with Data Layer Separation, Versioning and Easy Entity Creation from Reads
+## How to Use JTLDB to achieve data layer separation, data model versioning and easy entity creation from read statements
 Please checkout the [JTLDB Demo Project]() __COMING SOON__ for a good example of how to effectively use JTLDB.
 
 ## Contributing
