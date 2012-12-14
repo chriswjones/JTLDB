@@ -2,7 +2,7 @@ JTLDB
 =====
 
 ## What is JTLDB?
-JTLDB is a fully asynchronous and thread safe ObjectiveC SQLite wrapper that allows for concurrent reading and writing.  It was developed to facilitate easy SQLite use in iOS apps, specifically apps that use some sort of a sync model between the device and server.
+JTLDB is a fully asynchronous and thread safe ObjectiveC SQLite wrapper that allows for concurrent reading and writing.  It was developed to facilitate easy async SQLite use in iOS apps, specifically apps that use some sort of a sync model between the device and server on a background process, and has resulted in a simple and powerful library.
 
 ## Installation Instructions
 
